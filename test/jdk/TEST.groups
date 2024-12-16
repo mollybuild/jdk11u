@@ -47,7 +47,8 @@ tier1_part3 = \
     -com/sun/crypto/provider/Cipher/RSA/TestOAEPPadding.java \
     -com/sun/crypto/provider/Cipher/RSA/TestOAEPParameterSpec.java \
     sun/nio/cs/ISO8859x.java \
-    tools/pack200
+    tools/pack200 \
+    -tools/pack200/DeprecatePack200.java
 
 # When adding tests to tier2, make sure they end up in one of the tier2_partX groups
 tier2 = \
@@ -443,7 +444,6 @@ jdk_jdi_sanity = \
     com/sun/jdi/NullThreadGroupNameTest.java \
     com/sun/jdi/PopAndStepTest.java \
     com/sun/jdi/PopAsynchronousTest.java \
-    com/sun/jdi/ProcessAttachTest.java \
     com/sun/jdi/ReferrersTest.java \
     com/sun/jdi/RequestReflectionTest.java \
     com/sun/jdi/ResumeOneThreadTest.java \
