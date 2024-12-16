@@ -43,6 +43,9 @@ tier1_part3 = \
     :jdk_svc_sanity \
     java/nio/Buffer \
     com/sun/crypto/provider/Cipher \
+    -com/sun/crypto/provider/Cipher/ChaCha20 \
+    -com/sun/crypto/provider/Cipher/RSA/TestOAEPPadding.java \
+    -com/sun/crypto/provider/Cipher/RSA/TestOAEPParameterSpec.java \
     sun/nio/cs/ISO8859x.java \
     tools/pack200
 
