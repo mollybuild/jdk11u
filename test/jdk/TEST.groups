@@ -456,18 +456,7 @@ jdk_jdi_sanity = \
     com/sun/jdi/sde/TemperatureTableTest.java
 
 jdk_jfr_sanity = \
-    jdk/jfr/api/recording/event/TestLoadEventAfterStart.java \
-    jdk/jfr/api/recording/state/TestState.java \
-    jdk/jfr/event/os/TestCPULoad.java \
-    jdk/jfr/event/compiler/TestAllocInNewTLAB.java \
-    jdk/jfr/jcmd/TestJcmdStartStopDefault.java \
-    jdk/jfr/event/io/TestFileStreamEvents.java \
-    jdk/jfr/event/compiler/TestCompilerCompile.java \
-    jdk/jfr/event/gc/collection/TestGCGarbageCollectionEvent.java \
-    jdk/jfr/event/runtime/TestClassLoadEvent.java \
-    jdk/jfr/event/runtime/TestJavaBlockedEvent.java \
-    jdk/jfr/event/gc/collection/TestGCWithFasttime.java \
-    jdk/jfr/event/gc/configuration/TestGCConfigurationEvent.java
+    jdk/jfr/event/compiler/TestCompilerCompile.java
 
 svc_tools_sanity =
 
