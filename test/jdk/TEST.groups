@@ -178,7 +178,9 @@ jdk_stream = \
     java/util/stream
 
 jdk_math = \
-    java/math
+    java/math \
+    -java/math/BigInteger/StringConstructorOverflow.java \
+    -java/math/BigInteger/SymmetricRangeTests.java
 
 jdk_io = \
     java/io
