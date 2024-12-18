@@ -36,7 +36,16 @@ tier1_part1 = \
 
 tier1_part2 = \
     :jdk_util \
-    -java/util/Arrays/TimSortStackSize2.java
+    -java/util/Arrays/TimSortStackSize2.java \
+    -java/util/ArrayList/Bug8146568.java \
+    -java/util/AbstractList/CheckForComodification.java \
+    -java/util/Currency/PropertiesTest.sh \
+    -java/util/Locale/SoftKeys.java \
+    -java/util/TimeZone/DefaultTimeZoneTest.java \
+    -java/util/Vector/Bug8148174.java \
+    -java/util/zip/3GBZipFiles.sh \
+    -java/util/zip/DataDescriptorSignatureMissing.java \
+    -java/util/zip/ZipFile/TestZipFile.java
 
 tier1_part3 = \
     :jdk_math \
