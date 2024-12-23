@@ -107,40 +107,9 @@ build = \
 # java.lang package and VM runtime support
 jdk_lang = \
     java/lang \
-    -java/lang/management \
-    -java/lang/instrument \
-    -java/lang/CharSequence/Comparison.java \
-    -java/lang/Character/Supplementary.java \
-    -java/lang/Integer/BitTwiddle.java \
-    -java/lang/Long/BitTwiddle.java \
-    -java/lang/ProcessBuilder/Basic.java \
-    -java/lang/ProcessHandle/InfoTest.java \
-    -java/lang/ProcessHandle/TreeTest.java \ 
-    -java/lang/String/CompactString/CompareTo.java \
-    -java/lang/String/IsBlank.java \
-    -java/lang/String/Lines.java \
-    -java/lang/String/StringRepeat.java \
-    -java/lang/String/Strip.java \
-    -java/lang/String/concat/ImplicitStringConcatAssignLHS.java \
-    -java/lang/String/UnicodeCasingTest.java \
-    -java/lang/StringBuffer/Comparison.java \
-    -java/lang/StringBuilder/Comparison.java \
-    -java/lang/StringBuilder/HugeCapacity.java \
-    -java/lang/System/LoggerFinder/modules/JDKLoggerForImageTest.java \
-    -java/lang/System/LoggerFinder/modules/LoggerInImageTest.java \
-    -java/lang/System/LoggerFinder/modules/NamedLoggerForImageTest.java \
-    -java/lang/System/LoggerFinder/modules/UnnamedLoggerForImageTest.java \
-    -java/lang/invoke/AccessControlTest.java \
-    -java/lang/invoke/PrivateInterfaceCall.java \
-    -java/lang/invoke/condy/ConstantBootstrapsTest.java \
-    -java/lang/ref/ReachabilityFenceTest.java \ 
-    -java/lang/reflect/Nestmates/TestReflectionAPI.java \
-    -java/lang/reflect/Nestmates/TestSecurityManagerChecks.java \
-    -java/lang/ClassLoader/nativeLibrary/NativeLibraryTest.java \
-    -java/lang/ProcessBuilder/SkipTest.java \
-    -java/lang/Runtime/exec/ExecWithInput.java \
-    -java/lang/String/nativeEncoding/StringPlatformChars.java \
-    -java/lang/invoke/LFCaching/LFGarbageCollectedTest.java \
+    -:java_lang_1 \
+    -:java_lang_2 \
+    -:java_lang_3 \
     sun/invoke \
     sun/misc \
     sun/reflect \
@@ -176,6 +145,49 @@ jdk_util_other = \
 jdk_collections = \
     :jdk_collections_core \
     :jdk_concurrent
+
+java_lang_1 = \
+    java/lang/CharSequence/Comparison.java \
+    java/lang/Character/Supplementary.java \
+    java/lang/ClassLoader/nativeLibrary/NativeLibraryTest.java \
+    java/lang/Integer/BitTwiddle.java \
+    java/lang/Long/BitTwiddle.java \
+    java/lang/ProcessBuilder/Basic.java \
+    java/lang/ProcessBuilder/SkipTest.java \
+    java/lang/ProcessHandle/InfoTest.java \
+    java/lang/ProcessHandle/TreeTest.java \
+    java/lang/Runtime/exec/ExecWithInput.java \
+    java/lang/String/CompactString/CompareTo.java \
+    java/lang/String/IsBlank.java \
+    java/lang/String/Lines.java \
+    java/lang/String/StringRepeat.java \
+    java/lang/String/Strip.java \
+    java/lang/String/UnicodeCasingTest.java \
+    java/lang/String/concat/ImplicitStringConcatArgCount.java \
+    java/lang/String/concat/ImplicitStringConcatAssignLHS.java \
+    java/lang/String/nativeEncoding/StringPlatformChars.java
+
+java_lang_2 = \
+    java/lang/StringBuffer/Comparison.java \
+    java/lang/StringBuilder/Comparison.java \
+    java/lang/StringBuilder/HugeCapacity.java \
+    java/lang/System/LoggerFinder/modules/JDKLoggerForImageTest.java \
+    java/lang/System/LoggerFinder/modules/LoggerInImageTest.java \
+    java/lang/System/LoggerFinder/modules/NamedLoggerForImageTest.java \
+    java/lang/System/LoggerFinder/modules/UnnamedLoggerForImageTest.java
+
+java_lang_3 = \
+    java/lang/invoke/AccessControlTest.java \
+    java/lang/invoke/LFCaching/LFGarbageCollectedTest.java \
+    java/lang/invoke/LFCaching/LFSingleThreadCachingTest.java \
+    java/lang/invoke/MethodHandlesInvokersTest.java \
+    java/lang/invoke/PrivateInterfaceCall.java \
+    java/lang/invoke/condy/ConstantBootstrapsTest.java \
+    java/lang/instrument \
+    java/lang/management \
+    java/lang/ref/ReachabilityFenceTest.java \
+    java/lang/reflect/Nestmates/TestReflectionAPI.java \
+    java/lang/reflect/Nestmates/TestSecurityManagerChecks.java
 
 # java.util.concurrent
 # Includes concurrent collections plus other stuff
