@@ -57,7 +57,8 @@ tier1_part3 = \
     -com/sun/crypto/provider/Cipher/RSA/TestOAEPParameterSpec.java \
     sun/nio/cs/ISO8859x.java \
     tools/pack200 \
-    -tools/pack200/DeprecatePack200.java
+    -tools/pack200/DeprecatePack200.java \
+    -tools/pack200/Pack200Props.java
 
 # When adding tests to tier2, make sure they end up in one of the tier2_partX groups
 tier2 = \
@@ -149,6 +150,7 @@ jdk_collections = \
 java_lang_1 = \
     java/lang/CharSequence/Comparison.java \
     java/lang/Character/Supplementary.java \
+    java/lang/Character/UnicodeCasingTest.java \
     java/lang/ClassLoader/nativeLibrary/NativeLibraryTest.java \
     java/lang/Integer/BitTwiddle.java \
     java/lang/Long/BitTwiddle.java \
@@ -204,6 +206,7 @@ jdk_collections_core = \
     java/util/ArrayList \
     java/util/Arrays \
     java/util/BitSet \
+    -java/util/BitSet/stream/BitSetStreamTest.java \
     java/util/Collection \
     java/util/Collections \
     java/util/Comparator \
@@ -231,12 +234,15 @@ jdk_collections_core = \
 jdk_stream = \
     java/util/Optional \
     java/util/function \
-    java/util/stream
+    java/util/stream \
+    -java/util/stream/test/org/openjdk/tests/java/util/stream/CountLargeTest.java
 
 jdk_math = \
     java/math \
+    -java/math/BigInteger/BigIntegerTest.java \
     -java/math/BigInteger/StringConstructorOverflow.java \
     -java/math/BigInteger/SymmetricRangeTests.java
+
 
 jdk_io = \
     java/io
