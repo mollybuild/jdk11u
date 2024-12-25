@@ -43,6 +43,7 @@ tier1_part2 = \
     -java/util/Locale/SoftKeys.java \
     -java/util/TimeZone/DefaultTimeZoneTest.java \
     -java/util/Vector/Bug8148174.java \
+    -java/util/stream/CustomFJPoolTest.java \
     -java/util/zip/3GBZipFiles.sh \
     -java/util/zip/DataDescriptorSignatureMissing.java \
     -java/util/zip/ZipFile/TestZipFile.java
@@ -167,6 +168,7 @@ java_lang_1 = \
     java/lang/String/UnicodeCasingTest.java \
     java/lang/String/concat/ImplicitStringConcatArgCount.java \
     java/lang/String/concat/ImplicitStringConcatAssignLHS.java \
+    java/lang/String/concat/ImplicitStringConcatManyLongs.java \
     java/lang/String/nativeEncoding/StringPlatformChars.java
 
 java_lang_2 = \
